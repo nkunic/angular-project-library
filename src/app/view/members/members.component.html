@@ -1,0 +1,6 @@
+<div class="lista-clanova">
+  <div *ngFor="let clan of clanovi" class="lista-clanova__item">
+    <app-clan [id]="clan.id" [ime]="clan.ime" [knjiga]="clan.knjiga">
+    </app-clan>
+  </div>
+</div>

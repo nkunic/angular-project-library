@@ -1,0 +1,27 @@
+:host {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.homepage {
+  height: inherit;
+
+  .homepage__title + .homepage__buttons {
+    margin-top: 2rem;
+  }
+
+  .homepage__buttons {
+    display: flex;
+    justify-content: center;
+
+    .homepage__button + .homepage__button {
+      margin-left: 1rem;
+    }
+  }
+
+  .homepage__buttons + .homepage__content {
+    margin-top: 2rem;
+  }
+
+}

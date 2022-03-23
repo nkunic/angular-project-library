@@ -1,0 +1,108 @@
+@import '../../../../scss/variables';
+@import '../../../../scss/mixins/buttons';
+
+.c-btn {
+  user-select: none;
+  cursor: pointer;
+  transition: all, 0.3s, linear;
+  &:hover,
+  &:focus,
+  &:active {
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  &:focus {
+    &:active {
+      outline: 0;
+    }
+  }
+}
+
+// Style
+.c-btn--style-primary {
+  @include button-style(
+    $bodyfont,
+    1,
+    500,
+    center,
+    none,
+    1px,
+    $white,
+    $primarycolor,
+    transparent,
+    $white,
+    darken($primarycolor, 10%),
+    transparent,
+    $white,
+    lighten($primarycolor, 10%),
+    transparent,
+    $white,
+    lighten($primarycolor, 10%),
+    transparent
+  );
+}
+.c-btn--style-secondary {
+  @include button-style(
+    $bodyfont,
+    1,
+    500,
+    center,
+    none,
+    1px,
+    $white,
+    $secondarycolor,
+    transparent,
+    $white,
+    darken($secondarycolor, 10%),
+    transparent,
+    $white,
+    lighten($secondarycolor, 10%),
+    transparent,
+    $white,
+    lighten($secondarycolor, 10%),
+    transparent
+  );
+}
+
+.c-btn--style-gray {
+  @include button-style(
+    $bodyfont,
+    1,
+    400,
+    center,
+    none,
+    1px,
+    $black,
+    lighten($gray, 10%),
+    transparent,
+    $black,
+    darken($gray, 10%),
+    transparent,
+    $black,
+    lighten($gray, 10%),
+    transparent,
+    $black,
+    lighten($gray, 10%),
+    transparent
+  );
+}
+
+// Size
+.c-btn--size-small {
+  @include button-size(0.825rem, 0.3125rem, 0.625rem);
+}
+.c-btn--size-medium {
+  @include button-size(0.625rem, 0.625rem, 0.625rem);
+}
+.c-btn--size-large {
+  @include button-size(1rem, 0.625rem, 1.5rem);
+}
+
+// Radius
+.c-btn--radius-no {
+  @include button-border-radius(0);
+}
+.c-btn--radius-small {
+  @include button-border-radius(0.1875rem);
+}

@@ -1,0 +1,10 @@
+<div
+  class="c-btn"
+  [ngClass]="[
+    style ? 'c-btn--style-' + style : '',
+    size ? 'c-btn--size-' + size : '',
+    radius ? 'c-btn--radius-' + radius : '',
+  ]"
+>
+  <ng-content></ng-content>
+</div>

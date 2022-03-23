@@ -1,0 +1,24 @@
+:host {
+  display: block;
+  height: 100%;
+}
+
+/* MAIN */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: inherit;
+}
+
+/* CONTENT */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: inherit;
+  padding: 2rem 0;
+  width: 100%;
+}

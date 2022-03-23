@@ -1,0 +1,16 @@
+/* FONT FAMILY */
+$bodyfont: 'Roboto', sans-serif;
+
+/* COLORS */
+$primarycolor: #68a9bd;
+$primarycolor-l-20: lighten($primarycolor, 20%);
+$primarycolor-d-20: darken($primarycolor, 20%);
+
+$secondarycolor: #f24a57;
+$secondarycolor-l-10: lighten($secondarycolor, 10%);
+$secondarycolor-d-20: darken($secondarycolor, 20%);
+
+/* BLACK & WHITE */
+$black: #222;
+$gray: lighten($black, 50%);
+$white: #fff;

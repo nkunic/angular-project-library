@@ -1,0 +1,70 @@
+@import '../../../../scss/variables';
+@import '../../../../scss/mixins/texts';
+@import '../../../../scss/mixins/ellipsis';
+
+.book {
+  border: {
+    width: 1px;
+    color: $primarycolor-d-20;
+    style: solid;
+    radius: 0.3125rem;
+  }
+  width: 25rem;
+
+  .book__header {
+    display: flex;
+    .quantity {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.3125rem 0.625rem;
+      background-color: $primarycolor-d-20;
+      @include textmix($white, $bodyfont, 0.875rem, 1, 500, none);
+    }
+    .title {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      background-color: $primarycolor-l-20;
+      padding: 0.3125rem;
+      cursor: pointer;
+      @include textmix($white, $bodyfont, 0.875rem, normal, 500, none);
+      @include ellipsis();
+      span {
+        @include ellipsis();
+      }
+    }
+  }
+  .book__content {
+    padding: {
+      top: 1rem;
+      right: 1rem;
+      left: 1rem;
+    }
+    .label {
+      @include textmix($black, $bodyfont, 0.875rem, 1, 600, none);
+    }
+    .value {
+      @include textmix($black, $bodyfont, 0.875rem, 1, 400, none);
+    }
+    .author + .name {
+      margin-top: 0.3125rem;
+    }
+    .name {
+      display: flex;
+      align-items: center;
+      .label + input {
+        margin-left: 0.3125rem;
+      }
+      input {
+        flex: 1;
+      }
+    }
+  }
+  .book__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+}

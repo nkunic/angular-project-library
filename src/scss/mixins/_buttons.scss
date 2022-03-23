@@ -1,0 +1,60 @@
+/* BUTTON */
+@mixin button-style(
+  $font-family,
+  $line-height,
+  $font-weight,
+  $text-align,
+  $text-transform,
+  $border-width,
+  $color,
+  $background-color,
+  $border-color,
+  $color-hover,
+  $background-color-hover,
+  $border-color-hover,
+  $color-focus,
+  $background-color-focus,
+  $border-color-focus,
+  $color-active,
+  $background-color-active,
+  $border-color-active
+) {
+  font-family: $bodyfont;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  text-align: $text-align;
+  text-transform: $text-transform;
+  color: $color;
+  background-color: $background-color;
+  border: {
+    width: $border-width;
+    style: solid;
+    color: $border-color;
+  }
+  &:hover {
+    color: $color-hover;
+    background-color: $background-color-hover;
+    border-color: $border-color-hover;
+  }
+  &:focus {
+    color: $color-focus;
+    background-color: $background-color-focus;
+    border-color: $border-color-focus;
+  }
+  &:active {
+    color: $color-active;
+    background-color: $background-color-active;
+    border-color: $border-color-active;
+  }
+}
+
+@mixin button-size($font-size, $vertical-padding, $lateral-padding) {
+  font-size: $font-size;
+  padding: $vertical-padding $lateral-padding;
+}
+
+@mixin button-border-radius($border-radius) {
+  border: {
+    radius: $border-radius;
+  }
+}

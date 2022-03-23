@@ -1,0 +1,10 @@
+<div
+  class="c-title"
+  [ngClass]="[
+    alignment ? 'c-title--alignment-' + alignment : '',
+    color ? 'c-title--color-' + color : '',
+    size ? 'c-title--size-' + size : ''
+  ]"
+>
+  <ng-content></ng-content>
+</div>

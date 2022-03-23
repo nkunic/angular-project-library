@@ -1,0 +1,21 @@
+/* TEXT */
+@mixin textmix(
+  $color,
+  $font-family,
+  $font-size,
+  $line-height,
+  $font-weight,
+  $text-transform
+) {
+  color: $color;
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  text-transform: $text-transform;
+}
+/*
+  @include text-mix ($color, $font-family, $font-size, $line-height, $font-weight, $text-transform);
+  @include text-mix ($graydarker, $bodyfont, 1rem, 1, 500, none);
+  @include text-mix ($graydarker, $bodyfont, 1rem, 1, 500, uppercase);
+  */

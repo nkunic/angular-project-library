@@ -1,0 +1,23 @@
+/* CHARSET */
+@charset "UTF-8";
+
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* HTML & BODY */
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: $bodyfont;
+  margin: 0;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.c-app {
+  height: 100%;
+}

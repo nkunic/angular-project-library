@@ -1,0 +1,40 @@
+@import '../../../../scss/variables';
+
+.c-title {
+  font-family: $bodyfont;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+// Alignment
+.c-title--alignment-left {
+  text-align: left;
+}
+.c-title--alignment-center {
+  text-align: center;
+}
+.c-title--alignment-right {
+  text-align: right;
+}
+
+// Color
+.c-title--color-light {
+  color: $white;
+}
+.c-title--color-dark {
+  color: $black;
+}
+.c-title--color-primary {
+  color: $primarycolor-d-20;
+}
+
+// Size
+.c-title--size-small {
+  font-size: 0.875rem;
+}
+.c-title--size-medium {
+  font-size: 1.25rem;
+}
+.c-title--size-large {
+  font-size: 1.5rem;
+}

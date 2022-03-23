@@ -1,0 +1,10 @@
+<div class="books">
+  <div *ngFor="let book of books" class="books__item">
+    <app-book
+      [id]="book.id"
+      [autor]="book.author"
+      [naslov]="book.title"
+    >
+    </app-book>
+  </div>
+</div>
