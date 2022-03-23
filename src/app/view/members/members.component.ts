@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { BibliotekaService } from '../../services/biblioteka.service';
-import { Clan } from './clan/clan.model';
+import { LibraryService } from '../../services/library.service';
+import { Member } from './member/member.model';
 
 @Component({
   selector: 'app-members',
@@ -10,8 +10,8 @@ import { Clan } from './clan/clan.model';
 export class MembersComponent implements OnInit {
   public members: Array<Member>;
 
-  constructor(private bibliotekaService: BibliotekaService) {}
+  constructor(private libraryService: LibraryService) {}
   ngOnInit() {
-    this.members = this.bibliotekaService.members;
+    this.members = this.libraryService.members;
   }
 }

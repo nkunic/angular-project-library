@@ -69,7 +69,7 @@
   @include button-style(
     $bodyfont,
     1,
-    400,
+    500,
     center,
     none,
     1px,
@@ -93,7 +93,7 @@
   @include button-size(0.825rem, 0.3125rem, 0.625rem);
 }
 .c-btn--size-medium {
-  @include button-size(0.625rem, 0.625rem, 0.625rem);
+  @include button-size(0.75rem, 0.625rem, 0.625rem);
 }
 .c-btn--size-large {
   @include button-size(1rem, 0.625rem, 1.5rem);
